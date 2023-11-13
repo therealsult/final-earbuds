@@ -14,6 +14,149 @@
 
   </head>
   <body>
+  <!-- ==== banner ==== -->
+    <div id="introduction">
+      <div class="slide-1 slide"> <p>PAPER THIN TECH ©</p></div>
+      <div class="slide-2 slide"></div>
+      <div class="image-container">
+        <img class="banner-logo" src="images/PTT logo.png" alt="banner" title="banner">
+      </div>
+    </div>
+
+
+    <h1 class="hidden">Main Page</h1>
+
+  <!-- ==== header ==== -->
+  <div id="sticky-nav">
+      <header class="grid-con" id="main-header">
+            <div id="logo" class="col-span-2 m-col-span-3 l-col-start-2 l-col-end-3">
+                <!-- image issue *MUST FIX* <a href="#" class="nav-logo"><img src="images/menu-logo.svg" alt="Logo"></a> -->
+                <h2>PTT©</h2>
+            </div>
+            <nav id="main-nav" class="col-start-4 col-end-5 m-col-span-9 l-col-span-9">
+                <h2 class="hidden">Main Navigation</h2>
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#features-img">Specs</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+  </div>
+
+  <!-- ==== hero ==== -->
+  <section id="hero-main" class="grid-con">
+    <h2 class="hidden">Hero</h2>
+    <div id="hero-content" class=" col-span-full l-col-start-2 l-col-end-12">
+      <div id="intro">
+      <h2>Welcome to the future</h2>
+      <p>The worlds thinist earbuds are here, Paper Thin Tech introduces Paper Thin Buds v1. </p>
+      <canvas id="explode-view"></canvas> 
+    </div>    
+    </div>
+</section>
+
+  <!-- about -->
+  <section>
+  <h2 class="hidden">About</h2>
+  <div id="about-content" class="box col-span-full l-col-start-2 l-col-end-12">
+      <h2>About</h2>
+    </section>
+  <!-- ==== viewer ==== -->
+<section id="model-canvas" class="grid-con">
+
+
+  <model-viewer id="model" src="model/ptt-earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.55" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+
+
+
+    <button class="Hotspot" slot="hotspot-1" data-position="-5.634108744307573m -0.13044251891492253m -0.5386158347354484m" data-normal="0.1696122938222892m 0.06145145897228728m 0.9835931008168565m" data-visibility-attribute="visible">
+        <!-- <div class="HotspotAnnotation">Comfortable Design</div> -->
+        <div class="HotspotAnnotation" id="hotspot-1"></div>
+
+    </button>
+
+
+
+    
+    <button class="Hotspot" slot="hotspot-2" data-position="-6.224517855560407m -1.1664662955552711m -0.8168462784692925m" data-normal="1m 0m 0m" data-visibility-attribute="visible">
+        <!-- <div class="HotspotAnnotation">Super Fast Charging</div> -->
+        <div class="HotspotAnnotation" id="hotspot-2"></div>
+
+    </button>
+    
+
+
+
+    <button class="Hotspot" slot="hotspot-3" data-position="-6.292804945027456m -1.6296913573030594m -0.7924817602461554m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
+        <!-- <div class="HotspotAnnotation">Gold Composition </div> -->
+        <div class="HotspotAnnotation" id="hotspot-3"></div>
+
+    </button>
+    
+    
+    
+    
+    <button class="Hotspot" slot="hotspot-4" data-position="-6.180319607641026m -0.20790253137333103m -1.0378421343032023m" data-normal="-0.33199858543736194m -0.31778161265589516m -0.8881395081435176m" data-visibility-attribute="visible">
+        <!-- <div class="HotspotAnnotation">High-Quality Components </div> -->
+        <div class="HotspotAnnotation" id="hotspot-4"></div>
+
+    </button>  
+    <div class="progress-bar hide" slot="progress-bar">
+      <div class="update-bar"></div>
+  </div>
+  <button slot="ar-button" id="ar-button">
+      View in your space
+  </button>
+  <div id="ar-prompt">
+      <img src="ar_hand_prompt.png">
+  </div>
+</model-viewer> 
+  </section>
+
+
   
+  <!-- ==== about ==== -->
+<section id="about-section" class="grid-con">
+</div>
+<div id="features-img" class="box-2 col-span-full l-col-start-2 l-col-end-7">
+  <h2>Image</h2>
+</div>
+<div id="features-desc" class="box-2 col-span-full l-col-start-7 l-col-end-12">
+  <h2> &#10687; Feature-1</h2>
+  <h2> &#10687; Feature-2</h2>
+  <h2> &#10687; Feature-3</h2>
+
+</div>
+<div id="features-img" class="box-2 col-span-full l-col-start-2 l-col-end-7">
+    <h2>X-ray scroll image</h2>
+</div>
+<div id="features-desc" class="box-2 col-span-full l-col-start-7 l-col-end-12">
+    <h2> X-ray scroll video</h2>
+</div>
+</section>
+
+  <!-- ==== footer ==== -->
+  <footer id="footer-section">
+    <h2 class="hidden">Footer</h2>
+    <div id="footer-content" class="box-3">
+        <h2>Footer</h2>
+    </div>
+</footer>
+
+<section id="copyright">
+  <h2>Copyright &copy; 2023 - Paper Thin Tech Technologies</h2>
+</section>
+
+      
+ 
+    <!-- Loads <model-viewer> for browsers: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
