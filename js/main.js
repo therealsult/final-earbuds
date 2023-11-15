@@ -1,7 +1,25 @@
 (() => {
 
-    //console.log("IIFE Fired");
-    //////////////////////////////////variables
+  // hamburger menu 
+
+  let button = document.querySelector("#button");
+  let burgerCon = document.querySelector("#burger-con");
+
+
+  function hamburgerMenu() {
+    burgerCon.classList.toggle("slide-toggle");
+    button.classList.toggle("expanded");
+  };
+  
+
+  button.addEventListener("click", hamburgerMenu, false);	
+
+
+
+
+
+
+
 
     //SCROLL ANIMATION STUFF
     const canvas = document.querySelector("#explode-view");
@@ -18,11 +36,9 @@
       frame: 0
     }
 
-    //SCROLL ANIMATION
-    //run a for loop to populate our images array
     for(let i=0; i<frameCount; i++) {
       const img = new Image();
-      img.src = `images/scroll-revealer${(i+1).toString().padStart(4, '0')}.png`;
+      img.src = `images/scroller/scroll-revealer${(i+1).toString().padStart(4, '0')}.png`;
       images.push(img);
     }
 
@@ -41,18 +57,14 @@
 
     
 
-    //RENDER ANIMATION
-
+  
     function render () {
-      //console.log(buds.frame);
-      //console.log(images[buds.frame]);
-
+  
       context.clearRect(0, 0, canvas.width, canvas.height);
       context.drawImage(images[buds.frame], 0, 0);
 
     }
   
-
     images[0].addEventListener("onload", render);
 
 
@@ -61,6 +73,8 @@
 
 
 
+
+// model viewer 
 
 
   const model = document.querySelector("#model");
@@ -162,30 +176,14 @@ const infoBoxes = [
 
 
 
-  // hamburger menu 
-
-  let button = document.querySelector("#button");
-  let burgerCon = document.querySelector("#burger-con");
 
 
 
-  function hamburgerMenu() {
-    burgerCon.classList.toggle("slide-toggle");
-    button.classList.toggle("expanded");
-  };
 
-
-  button.addEventListener("click", hamburgerMenu, false);	
-
-
-
-// intro
+    
+// scoll animation 
 
 var s = skrollr.init();
-
-
-
-
 
 
   // xray-slider

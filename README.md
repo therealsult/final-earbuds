@@ -1,5 +1,6 @@
 # Earbuds
-Earbuds Interactive Website
+
+Model viewer application
 
 ## Installation
 
@@ -7,7 +8,7 @@ Use a compatible online web browser to interact with Paper Thin Tech Earbuds mod
 
 ## Usage
 
-Use to learn about Paper Thin Tech Earbuds new and improved design
+Use to learn about the ear buds new and improved design
 
 ## Contributing
 
@@ -19,7 +20,7 @@ Use to learn about Paper Thin Tech Earbuds new and improved design
 
 ## History
 
-Made on November 12, 2023
+Made on October 26, 2023
 
 ## Credits
 

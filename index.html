@@ -26,25 +26,24 @@
     <h1 class="hidden">Main Page</h1>
 
   <!-- ==== header ==== -->
-  <div id="sticky-nav">
-      <header class="grid-con" id="main-header">
-            <div id="logo" class="col-span-2 m-col-span-3 l-col-start-2 l-col-end-3">
-                <!-- image issue *MUST FIX* <a href="#" class="nav-logo"><img src="images/menu-logo.svg" alt="Logo"></a> -->
-                <h2>PTT©</h2>
-            </div>
-            <nav id="main-nav" class="col-start-4 col-end-5 m-col-span-9 l-col-span-9">
-                <h2 class="hidden">Main Navigation</h2>
-                <button id="button"></button>
-                <div id="burger-con">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#about-section">About</a></li>
-                        <li><a href="#features-img">Specs</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-  </div>
+    
+  <header id="main-header" class="grid-con">
+    
+    <div id="main-logo" class="col-span-2 m-col-span-3 l-col-start-2 l-col-end-3">
+        <a href="index.html"><img src="images/menu-logo.svg" alt="PTT"></a>
+    </div>
+    <nav id="main-nav" class="col-start-4 col-end-5 m-col-span-9 l-col-span-9">
+        <h2 class="hidden">Main Navigation</h2>
+        <button id="button"></button>
+        <div id="burger-con">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#specs">Features</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
   <!-- intro -->
 
@@ -150,8 +149,18 @@
         </div>
   </section> -->
   <!-- ==== viewer ==== -->
-
-<section id="model-canvas" class="grid-con">
+ 
+  <section id="model-main" class="grid-con">
+    <h2 class="hidden">About</h2>
+    <div id="model-content" class=" col-span-full l-col-start-2 l-col-end-12">
+      <div id="intro">
+        <h2>Live view Paper Thin Buds™ v1</h2>
+        <p>Dive into the world of Paper Thin Tech®. Live view our latest innovation with out 3D viewer </p>
+      </div>    
+    </div>
+  </section>
+  
+      <section id="model-canvas" class="grid-con">
 
   <div id="earbud-model" class="col-span-full">
       <model-viewer id="model" src="model/ptt-earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.55" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
@@ -186,8 +195,7 @@
 
     </div>
   </model-viewer> 
-</section>
-
+      </section>
 
   
   <!-- ==== about ==== -->
@@ -246,12 +254,43 @@
   </section>
 
 
+  <section id="x-ray-main" class="grid-con">
+    <h2 class="hidden">X-ray</h2>
+    <div id="X-ray-content" class=" col-span-full l-col-start-2 l-col-end-12">
+      <div id="intro">
+        <h2>Look insde Paper Thin Buds™ v1</h2>
+        <p>Explore what the inside of Paper Thin Tech® looks like, made with solid gold to provide sound superiority </p>
+      </div>    
+    </div>
+  </section>
+
+  <div class="col-span-full">
+    <div id="mobile-tablet-view">
+        <img src="images/earbud-x-ray.png" alt="X ray view of ear bud">
+        <img src="images/earbud.png" alt="Regular view of ear bud">
+    </div>
+    <div id="outerShell">
+        <div id="imageCon">
+        <div class="slideImage image-right"></div> <!-- wire version -->
+        <div class="slideImage image-left"></div> <!-- actual earbuds -->
+        <div class="slideImage image-drag"></div> <!-- div to create black bar -->
+        </div>
+    </div>  
+  </div>
+  </section>
+
+  
   <!-- ==== footer ==== -->
   <footer id="footer-section">
     <h2 class="hidden">Footer</h2>
-    <div id="footer-content" class="box-3">
-        <h2>Footer</h2>
-    </div>
+    <div id="footer-content" class="col-span-full">
+        <img src="images/PTT logo.png" alt="">
+        <div id="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#specs">Specs</a></li>
+            </ul>
 </footer>
 
 <section id="copyright">
