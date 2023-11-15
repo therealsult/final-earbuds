@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;400&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
@@ -59,118 +60,191 @@
     <div id="hero-content" class=" col-span-full l-col-start-2 l-col-end-12">
       <div id="intro">
       <h2>Welcome to the future</h2>
-      <p>The worlds thinist earbuds are here, Paper Thin Tech introduces Paper Thin Buds v1. </p>
-      <canvas id="explode-view"></canvas> 
+      <p>The worlds thinist earbuds are here, Paper Thin Tech introduces Paper Thin Buds™ v1. </p>
     </div>    
     </div>
 </section>
 
-  <!-- about -->
-  <section>
+
+
+
+
+
+
+
+
+<!-- ======== scroller ======== -->
+<section id="scr-animation" class="full-width-grid-con">
+  <h2 class="hidden">Prodect Animation</h2>
+  <div id="animation-content" class="col-span-full">\
+      <canvas id="explode-view"></canvas>
+  </div>
+</section>
+
+
+<section id="about-main" class="grid-con">
   <h2 class="hidden">About</h2>
-  <div id="about-content" class="col-span-full l-col-start-2 l-col-end-12">
-    <section id="about-box">
-      <div id="first-row" data-start="transform:translate(0%,0%);" data--1000-bottom="transform:translate(0%,200%);">
-    
-        <h2>The sound</h2>
+  <div id="about-content" class=" col-span-full l-col-start-2 l-col-end-12">
+    <div id="intro">
+      <h2>Superior quality earbuds are Paper Thin Tech®</h2>
+      <p>PTT® Paper Thin Buds™ v1 will release on December 05, 2023, offering the best sound quality on the market today. The immersiveness is uncomparable to other brand name earbuds comparable to Bose QuietComfort Headphones. </p>
+    </div>    
+  </div>
+</section>
+
+
+<section id="about-box" class="grid-con">
+  <h2 class="hidden">About box</h2>
+  <div id="about-content" class=" col-span-full l-col-start-2 l-col-end-12">
+    <div id="intro">
+
+      <div id="first-row" data-start="transform:translate(0%,0%);" data--1000-bottom="transform:translate(0%,100%);">
+        
+        <h2>The sound overtone</h2>
         <div class="first notemp" data-150-center="opacity: 0" data-140-center="opacity: 0.7;"></div>
         <div class="second notemp" data-80-center="opacity: 0;" data-75-center="opacity: 0.7;"></div>
         <div class="third notemp" data-60-center="opacity: 0;" data-30-center="opacity: 0.7;"></div>
         <div class="forth notemp" data-40-center="opacity: 0;" data-30-center="opacity: 0.7;"></div>
     
       </div>
-      
-      <div id="second-row" data-start="transform:translate(0%,0%);" data--1000-bottom="transform:translate(0%,200%);">
-     
+
+      <div id="second-row" data-start="transform:translate(0%,0%);" data--1000-bottom="transform:translate(0%,100%);">
+        
         <h2>The immersiveness</h2>
-        <div class="first notemp" data-150-center="opacity: 0" data-140-center="opacity: 0.7;"></div>
-        <div class="second notemp" data-80-center="opacity: 0;" data-75-center="opacity: 0.7;"></div>
-        <div class="third notemp" data-60-center="opacity: 0;" data-30-center="opacity: 0.7;"></div>
-        <div class="forth notemp" data-40-center="opacity: 0;" data-30-center="opacity: 0.7;"></div>
-      
-      </div>
-    </section> 
-    </section>
+        <div id="second-row-lights">
+          <div class="first notemp" data-150-center="opacity: 0" data-140-center="opacity: 0.7;"></div>
+          <div class="second notemp" data-80-center="opacity: 0;" data-75-center="opacity: 0.7;"></div>
+          <div class="third notemp" data-60-center="opacity: 0;" data-30-center="opacity: 0.7;"></div>
+          <div class="forth notemp" data-40-center="opacity: 0;" data-30-center="opacity: 0.7;"></div>
+        </div>
+    </div>
+
+    </div>    
+  </div>
+</section>
+
+
+  <!-- about -->
+  <!-- <section id="about-box" class=" col-span-full l-col-start-2 l-col-end-12">
+    <h2 class="hidden">About</h2>
+
+          <div id="first-row" data-start="transform:translate(0%,0%);" data--1000-bottom="transform:translate(0%,100%);">
+        
+            <h2>The sound</h2>
+            <div class="first notemp" data-150-center="opacity: 0" data-140-center="opacity: 0.7;"></div>
+            <div class="second notemp" data-80-center="opacity: 0;" data-75-center="opacity: 0.7;"></div>
+            <div class="third notemp" data-60-center="opacity: 0;" data-30-center="opacity: 0.7;"></div>
+            <div class="forth notemp" data-40-center="opacity: 0;" data-30-center="opacity: 0.7;"></div>
+        
+          </div>
+          
+          <div id="second-row" data-start="transform:translate(0%,0%);" data--1000-bottom="transform:translate(0%,100%);">
+        
+            <h2>The immersiveness</h2>
+            <div id="second-row-lights">
+              <div class="first notemp" data-150-center="opacity: 0" data-140-center="opacity: 0.7;"></div>
+              <div class="second notemp" data-80-center="opacity: 0;" data-75-center="opacity: 0.7;"></div>
+              <div class="third notemp" data-60-center="opacity: 0;" data-30-center="opacity: 0.7;"></div>
+              <div class="forth notemp" data-40-center="opacity: 0;" data-30-center="opacity: 0.7;"></div>
+            </div>
+        </div>
+  </section> -->
   <!-- ==== viewer ==== -->
+
 <section id="model-canvas" class="grid-con">
 
+  <div id="earbud-model" class="col-span-full">
+      <model-viewer id="model" src="model/ptt-earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.55" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
 
-  <model-viewer id="model" src="model/ptt-earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.55" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+            <button class="Hotspot" slot="hotspot-1" data-position="-5.634108744307573m -0.13044251891492253m -0.5386158347354484m" data-normal="0.1696122938222892m 0.06145145897228728m 0.9835931008168565m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-1"></div>
+            </button>
 
+            <button class="Hotspot" slot="hotspot-2" data-position="-6.224517855560407m -1.1664662955552711m -0.8168462784692925m" data-normal="1m 0m 0m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-2"></div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-3" data-position="-6.292804945027456m -1.6296913573030594m -0.7924817602461554m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-3"></div>
+            </button>
+            
+            <button class="Hotspot" slot="hotspot-4" data-position="-6.180319607641026m -0.20790253137333103m -1.0378421343032023m" data-normal="-0.33199858543736194m -0.31778161265589516m -0.8881395081435176m" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation" id="hotspot-4"></div>
+            </button> 
 
+          <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+          </div>
 
-    <button class="Hotspot" slot="hotspot-1" data-position="-5.634108744307573m -0.13044251891492253m -0.5386158347354484m" data-normal="0.1696122938222892m 0.06145145897228728m 0.9835931008168565m" data-visibility-attribute="visible">
-        <!-- <div class="HotspotAnnotation">Comfortable Design</div> -->
-        <div class="HotspotAnnotation" id="hotspot-1"></div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
 
-    </button>
+        <div id="ar-prompt">
+            <img src="ar_hand_prompt.png">
+        </div>
 
-
-
-    
-    <button class="Hotspot" slot="hotspot-2" data-position="-6.224517855560407m -1.1664662955552711m -0.8168462784692925m" data-normal="1m 0m 0m" data-visibility-attribute="visible">
-        <!-- <div class="HotspotAnnotation">Super Fast Charging</div> -->
-        <div class="HotspotAnnotation" id="hotspot-2"></div>
-
-    </button>
-    
-
-
-
-    <button class="Hotspot" slot="hotspot-3" data-position="-6.292804945027456m -1.6296913573030594m -0.7924817602461554m" data-normal="-1m 0m 0m" data-visibility-attribute="visible">
-        <!-- <div class="HotspotAnnotation">Gold Composition </div> -->
-        <div class="HotspotAnnotation" id="hotspot-3"></div>
-
-    </button>
-    
-    
-    
-    
-    <button class="Hotspot" slot="hotspot-4" data-position="-6.180319607641026m -0.20790253137333103m -1.0378421343032023m" data-normal="-0.33199858543736194m -0.31778161265589516m -0.8881395081435176m" data-visibility-attribute="visible">
-        <!-- <div class="HotspotAnnotation">High-Quality Components </div> -->
-        <div class="HotspotAnnotation" id="hotspot-4"></div>
-
-    </button>  
-    <div class="progress-bar hide" slot="progress-bar">
-      <div class="update-bar"></div>
-  </div>
-  <button slot="ar-button" id="ar-button">
-      View in your space
-  </button>
-  <div id="ar-prompt">
-      <img src="ar_hand_prompt.png">
-  </div>
-</model-viewer> 
-  </section>
+    </div>
+  </model-viewer> 
+</section>
 
 
   
   <!-- ==== about ==== -->
-<section id="about-section" class="grid-con">
-</div>
-<div id="features-img" class="box-2 col-span-full l-col-start-2 l-col-end-7">
-  <h2>Image</h2>
-</div>
-<div id="features-desc" class="box-2 col-span-full l-col-start-7 l-col-end-12">
-  <h2> &#10687; Feature-1</h2>
-  <h2> &#10687; Feature-2</h2>
-  <h2> &#10687; Feature-3</h2>
 
-</div>
-<div class="col-span-full">
-  <div id="mobile-tablet-view">
-      <img src="images/earbud-x-ray.png" alt="X ray view of ear bud">
-      <img src="images/earbud.png" alt="Regular view of ear bud">
-  </div>
-  <div id="outerShell">
-      <div id="imageCon">
-      <div class="slideImage image-right"></div> <!-- wire version -->
-      <div class="slideImage image-left"></div> <!-- actual earbuds -->
-      <div class="slideImage image-drag"></div> <!-- div to create black bar -->
-      </div>
-  </div>  
-</div>
-</section>
+  <section id="features-sec">
+    <h2 class="hidden">Features</h2>     
+      <div class="container">
+  
+        <div class="box-c">
+          <div class="content">
+            <div class="tape"></div>
+            <h2>01</h2>
+            <h3>Ultra-Sleek Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque nesciunt possimus eveniet eius assumenda ipsa modi distinctio, sunt earum voluptatem inventore in vel odio adipisci explicabo sint quibusdam nisi!</p>
+            <a href="#">Read more...</a>
+          </div>
+        </div>
+        
+        
+        <div class="box-c">
+          <div class="content">
+            <div class="tape"></div>
+            <h2>02</h2>
+            <h3>Exceptional Sound Quality</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque nesciunt possimus eveniet eius assumenda ipsa modi distinctio, sunt earum voluptatem inventore in vel odio adipisci explicabo sint quibusdam nisi!</p>
+            <a href="#">Read more...</a>
+          </div>
+        </div>
+        
+        
+        
+        <div class="box-c">
+          <div class="content">
+            <div class="tape"></div>
+            <h2>03</h2>
+            <h3>Paper-Thin Charging Case</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque nesciunt possimus eveniet eius assumenda ipsa modi distinctio, sunt earum voluptatem inventore in vel odio adipisci explicabo sint quibusdam nisi!</p>
+            <a href="#">Read more...</a>
+          </div>
+        </div>
+        
+        
+        
+        <div class="box-c">
+          <div class="content">
+            <div class="tape"></div>
+            <h2>04</h2>
+            <h3>Seamless Connectivity and Touch Controls</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque nesciunt possimus eveniet eius assumenda ipsa modi distinctio, sunt earum voluptatem inventore in vel odio adipisci explicabo sint quibusdam nisi!</p>
+            <a href="#">Read more...</a>
+          </div>
+        </div>
+        
+        
+
+  </section>
+
 
   <!-- ==== footer ==== -->
   <footer id="footer-section">
@@ -181,7 +255,7 @@
 </footer>
 
 <section id="copyright">
-  <h2>Copyright &copy; 2023 - Paper Thin Tech Technologies</h2>
+  <p>Copyright &copy; 2023 - Paper Thin Tech Technologies</p>
 </section>
 
       

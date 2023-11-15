@@ -1,65 +1,59 @@
 (() => {
-// scroller 
-const canvas = document.querySelector("#explode-view");
-const context = canvas.getContext("2d");
 
-canvas.width = 1920;
-canvas.height = 1080;
+    //console.log("IIFE Fired");
+    //////////////////////////////////variables
 
-const frameCount = 238; //how many still frames do we have
+    //SCROLL ANIMATION STUFF
+    const canvas = document.querySelector("#explode-view");
+    const context = canvas.getContext("2d");
 
-const images = [] //array to hold all of our images
+    canvas.width = 1920;
+    canvas.height = 1080;
 
-//lets create an object called bugs to hold the current frame
-const buds = {
-  frame: 0
-};
+    const frameCount = 238; 
 
-//lets run a for loop to populate our images array
-for (let i = 0; i < frameCount; i++) {
-  const img = new Image();
-  //Since the image number is an integer, we’ll need to turn it in to a string and use
-  img.src = `images/scroll-revealer${(i+1).toString().padStart(4, '0')}.png`;
-  images.push(img);
-}
-//console.table(images);
+    const images = []; 
 
-//images go from 0-449
+    const buds = {
+      frame: 0
+    }
 
-//we are not actually animating a DOM element, but rather an object, which contains
-//a frame count, as the user scrolls we increase the value by one
-//we tell green sock there is a total number of 449 frames to cycle through so it knows when to stop
-//The way that greenSock and scrolling works is through using decimals, so we have to use the built in snap feature
-//and pass the frame property so that it snaps to a whole value, instead of 0.085 we get 1
+    //SCROLL ANIMATION
+    //run a for loop to populate our images array
+    for(let i=0; i<frameCount; i++) {
+      const img = new Image();
+      img.src = `images/scroll-revealer${(i+1).toString().padStart(4, '0')}.png`;
+      images.push(img);
+    }
 
-gsap.to(buds, {
-  frame: 238,
-  snap: "frame",
-  scrollTrigger: {
-    trigger: "#explode-view",
-    // scrub: true,
-    pin: true,
-    scrub: 1,
-    start: "top top",
-    // end: "+=100%",
-    markers: true
-  },
-  onUpdate: render, //onUpdate part of GS
-})
-//console.log("frameCount:" + frameCount);
+    //Greensock handling
+    gsap.to(buds, {
+      frame: 237,
+      snap: "frame",
+      scrollTrigger: {
+          trigger: "#scr-animation",
+          pin: true,
+          scrub: 1,
+          start: "top top"
+      },
+      onUpdate: render
+    })
 
-//when first image is loaded in array, call the render function, otherwise we have a blank canvas
+    
 
-images[0].addEventListener("onload", render);
+    //RENDER ANIMATION
 
-function render() {
-  // wipe the canvas
-  context.clearRect(0, 0, canvas.width, canvas.height);
-  //draw a new frame, using canvas drawImage() method, position 0,0.
-  console.log(buds.frame);
-  console.log(images[buds.frame]);
-  context.drawImage(images[buds.frame], 0, 0); 
-}
+    function render () {
+      //console.log(buds.frame);
+      //console.log(images[buds.frame]);
+
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(images[buds.frame], 0, 0);
+
+    }
+  
+
+    images[0].addEventListener("onload", render);
 
 
 
