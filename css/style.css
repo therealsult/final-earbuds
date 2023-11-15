@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+#features-sec{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #000000;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 0 20px;
+}
+
+/* Add media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+
+.container .box-c {
+  position:relative;
+  height:auto;
+  padding:0px;
+  background:rgb(255, 255, 255);
+  
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  border: 1px solid #000;
+  /*
+  border: 1px solid #DEDEDE;
+  */
+  /*overflow:hidden;*/
+}
+
+.box-c .content { 
+  position:relative;  
+  padding:100px 20px;
+  background: #ffffff;
+  color:#020202;
+  /*
+  background: #DEDEDE;
+  colot:#000;
+  */
+  
+}
+.container .box-c:before {
+  content:'';
+  position:absolute;
+  top:-2px;
+  left:-2px;
+  bottom:-2px;
+  right:-2px;
+  /*background:rgba(255,255,255,1);*/
+  background:#0b0b0b;  
+  transform: skew(2deg,2deg);
+  z-index:-1;
+}
+
+.container .box-c:nth-child(1):before {
+  background: linear-gradient(315deg, #312803, #ffde59)
+}
+.container .box-c:nth-child(1):hover:before {
+  /*z-index:1;*/ /*example*/
+}
+
+.container .box-c:nth-child(2):before {
+  background: linear-gradient(315deg, #ffa602,#d4aa00)
+}
+
+.container .box-c:nth-child(3):before {
+   background: linear-gradient(315deg, #650667,#ffa602)
+}
+
+.container .box-c:nth-child(4):before {
+   background: linear-gradient(315deg, #000000,#caa200)
+}
+
+
+.container .box-c:nth-child(1):hover:before {  
+  background: linear-gradient(315deg, #caa100,#090700)
+}
+
+
+.container .box-c:nth-child(2):hover:before {  
+  background: linear-gradient(315deg, #a2ca00,#231e0b)
+}
+
+.container .box-c:nth-child(3):hover:before {  
+  background: linear-gradient(315deg, #0091ca,#ffde59)
+}
+
+.container .box-c:nth-child(4):hover:before {  
+  background: linear-gradient(315deg, #caa100,#090700)
+}
+
+
+
+/*.container .box-c:after{*/
+.container .tape{
+  overflow:hidden;
+  position:absolute;
+  top:0;
+  left:0;  
+  width:100%;
+  height:100%;
+  background:rgba(255,255,0,0.0);   
+}
+.container .tape:after{
+  content: '';
+  position:absolute;
+  top:0;
+  left:0;  
+  height:100%;
+  width:50%;
+  margin-left:25%;
+  background: rgba(255, 255, 255, 0.856)03);
+  background: rgba(228, 228, 228, 0.1);
+  pointer-events:none;  
+  transform:skew(41deg);
+  overflow:hidden;
+  transition:0.25s; /* 0.5 0.75*/
+}
+
+.box-c:hover .tape:after{
+  width:100%;
+  margin-left:0%;
+  transform:skew(0deg);  /*180 0 360 -180 +135 -135*/
+ 
+}
+
+.box-c .content h2{
+  position:absolute;
+  top:-30px;
+  right:20px;
+  margin:0;
+  padding:0;
+  font-size:10em;
+  color:rgba(0, 0, 0, 0.05);
+  /*color:#000;*/
+  transition: 0.25s;
+}
+
+.box-c:hover .content h2{ 
+  top:-50px;  
+  color:rgba(21, 21, 21, 0.297);
+  /*color:rgba(0,0,0,0.25);*/
+}
+
+.box-c .content h3{ 
+  margin: 0 0 10px;
+  padding:0;
+  font-size:24px;
+  font-weight:bold;
+}
+
+.box-c .content p{ 
+  margin:0;
+  padding:0;
+  color:#212121;
+  /*color:#333;*/
+  font-size:16px;
+}
+
+.box-c .content a{ 
+  position: relative;
+  margin:20px 0 0 0;
+  padding:10px 20px;
+  text-decoration:none;
+  border: 2px solid #1c1c1c;
+  color: #000000;
+  /*color:#333;*/
+  display:inline-block;
+  transition: 0.5s;
+  visibility:hidden;
+  transform: translateY(10px);
+  opacity:0;
+}
+
+.box-c:hover .content a{ 
+  visibility:visible;
+  opacity:1;
+  transform: translateY(0px);
+}
+
+.box-c .content a:hover{ 
+  background:rgba(58, 58, 58, 0.299);  
+  color:#000000;
+  /*
+  color:#DEDEDE;
+  background:rgba(0,0,0,0.75);
+  */
+}

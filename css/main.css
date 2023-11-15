@@ -1,7 +1,103 @@
+
+
+
+
+
+
+/* ======== banner slide ======== */
+
+#introduction {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 105;
+	background-color: #141414;
+	cursor: pointer;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+#introduction .image-container {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	position: relative;
+}
+
+@media (max-width: 768px) {
+	#introduction .image-container {
+		height: 80vh;
+	}
+}
+
+#introduction .banner-logo {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	max-width: 1600px;
+}
+
+#introduction .slide {
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	right: 0;
+	bottom: 0;
+	background: rgb(0, 0, 0);
+
+}
+
+#introduction .slide p {
+  padding-top: 200px;
+  font-size: 40px; 
+  font-family: 'Lexend', sans-serif;
+  font-weight: 100;
+  text-align: center; 
+  color: #fff;
+}
+
+#introduction .slide-2 {
+	height: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.slide-1 {
+	z-index: 999;
+}
+
+.image-container {
+	background-color: #ffde59;
+}
+
+#content {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 36px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+
+
+
+/* ======== Model Viewer ======== */
+
+
 model-viewer {
   width: auto;
   max-width: 1200px;
-  height: 700px;
+  height: 600px;
   background: rgb(255,255,255);
   background: linear-gradient(100deg, rgba(255,255,255,1) 20%, rgba(253,212,0,0.7018206940979517) 30%, 
   rgba(0,0,0,0.6962184532015931) 30%, rgba(0,0,0,1) 50%, rgba(0,0,0,0.7) 70%, rgba(253,212,0,0.7) 70%, 
@@ -148,6 +244,7 @@ model-viewer > #ar-prompt > img {
 
 #outerShell {
   display: none;
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -158,15 +255,14 @@ model-viewer > #ar-prompt > img {
     display: block;
     max-width: 940px;
     margin: auto;
-    border: solid 15px #ffde59;
-  }
+   }
   #imageCon {
     position: relative;
     max-width: 940px;
     height: 90vh;
   }
   .slideImage {
-    position: absolute; /*images are stacked in order via absolute*/
+    position: absolute;  
     left: 0;
     right: 0;
     height: 90vh;
@@ -177,13 +273,13 @@ model-viewer > #ar-prompt > img {
   }
   .image-left {
     background: url(../images/earbud.png) no-repeat;
-    width: 50%; /*start the image at the halfway point*/
+    width: 50%; 
     background-size: cover;
   }
   .image-drag {
-    background-color: #000000;
-    left: 50%; /*match up with image left*/
-    width: 15px; /*orig 49*/
+    background-color: #ffde59;
+    left: 50%; 
+    width: 25px;  
     cursor: pointer;
   }
 
@@ -212,7 +308,7 @@ h1 {
 h2 {
   text-align: center;
   color: rgb(0, 0, 0);
-font-size: 45px;}
+  font-size: 45px;}
 
 p {
   text-align: center;
@@ -220,117 +316,41 @@ p {
   font-size: 35px;
   font-weight: lighter;
 }
+ 
 
-body {
-  background: #000;
-}
+/* ======== hero ======== */
 
+#intro h2 {
+    margin-bottom: 20px;
+  text-align: left;
+ }
 
-/* slider */
-#explode-view {
-  max-width: 100%;
-  margin-top: 100px;
-}
-
-
-/* hero */
-
+ #intro p {
+  text-align: left;
+ }
 
 #hero-main {
   margin-top: 50px;
 }
 
-/* ======== banner slide ======== */
+/* ======== slider ======== */
+#explode-view {
+  max-width: 100%;
+ }
 
-#introduction {
-	width: 100vw;
-	height: 100vh;
-	position: fixed;
-	z-index: 105;
-	background-color: #141414;
-	cursor: pointer;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-}
 
-#introduction .image-container {
-	width: 100vw;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	position: relative;
-}
 
-@media (max-width: 768px) {
-	#introduction .image-container {
-		height: 80vh;
-	}
-}
-
-#introduction .banner-logo {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 80%;
-	max-width: 1600px;
-}
-
-#introduction .slide {
-	position:fixed;
-	width: 100%;
-	height: 100%;
-	right: 0;
-	bottom: 0;
-	background: rgb(0, 0, 0);
-
-}
-
-#introduction .slide p {
-  padding-top: 200px;
-  font-size: 40px; 
-  font-family: 'Lexend', sans-serif;
-  font-weight: 100;
-  text-align: center; 
-  color: #fff;
-}
-
-#introduction .slide-2 {
-	height: 0;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-}
-
-.slide-1 {
-	z-index: 999;
-}
-
-.image-container {
-	background-color: #ffde59;
-}
-
-#content {
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 36px;
-	font-weight: 600;
-	color: #ffffff;
-}
 /* ======== about ======== */
+#about-sec h2, p {
+  text-align: left;
 
-#intro h2 {
-  margin-top: 4rem; margin-bottom: 60px;
 }
 
+#about-main {
+  margin-top: 70px;
+}
 #about-box {
-  margin-bottom: 300px;
+ margin-top: -70px;
 }
 
 #about-box h2 {
@@ -338,8 +358,8 @@ text-align: left;
 padding-left: 30px;
 }
 
-#second-row {
-  margin-top: 30px;
+#first-row {
+  margin-bottom: 6rem;
 }
 
 .notemp{
@@ -347,17 +367,16 @@ padding-left: 30px;
   padding-left: 200px;
 }
 .first {
-  width: 200px;
+  width: 375px;
   height: 20px;
   background-color: lightgreen;
   word-wrap: break-word;
-  margin-left: 30px;
   margin-left: 30px;
   opacity: 0;
   transition: opacity 0.3s linear;
 }
 .second{
-  width: 200px;
+  width: 375px;
   height: 20px;
   background-color: green;
   z-index: 500;
@@ -366,7 +385,7 @@ padding-left: 30px;
   transition: opacity 0.5s linear ;
 }
 .third{
-  width: 200px;
+  width: 375px;
   height: 20px;
   background-color: orange;
   position: relative;
@@ -374,12 +393,12 @@ padding-left: 30px;
   transition: opacity 0.7s linear;
 }
 .forth{
-  width: 200px;
+  width: 375px;
   height: 20px;
   background-color: red;
   position: relative;
   margin-left: 30px;
-  transition: opacity 0.7s linear;
+  transition: opacity 0.9s linear;
 }
 
 .fix{
@@ -472,13 +491,13 @@ padding-left: 30px;
   margin: 0 auto;
   background-color: #fff;
   padding: 0px 0 8px 0;
-  font-size: 6px;
-  font-family: 'Lexend', sans-serif; 
-  font-weight: 100;
 }
 
-#copyright h2 {
-  text-align: center
+#copyright p {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Lexend', sans-serif; 
+  font-weight: 100;
 }
 
 
@@ -537,6 +556,49 @@ padding-left: 30px;
   #burger-con ul li:last-child {
     margin-right: 0px;
   }
+
+  #second-row-lights {
+    margin-left: auto;
+  }
+
+  .first {
+    width: 200px;
+    height: 20px;
+    background-color: lightgreen;
+    word-wrap: break-word;
+    margin-left: 30px;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+  }
+  .second{
+    width: 200px;
+    height: 20px;
+    background-color: green;
+    z-index: 500;
+    top: 50px;
+    margin-left: 30px;
+    transition: opacity 0.5s linear ;
+  }
+  .third{
+    width: 200px;
+    height: 20px;
+    background-color: orange;
+    position: relative;
+    margin-left: 30px;
+    transition: opacity 0.7s linear;
+  }
+  .forth{
+    width: 200px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    margin-left: 30px;
+    transition: opacity 0.9s linear;
+  }
+
+  #about-box {
+    margin-top: 40px;
+   }
 }
 
 html {
@@ -556,8 +618,9 @@ body {
 }
 
 #model-canvas {
-  display: none;
-  border: solid 15px #ffde59;
+  margin-top: 250px; margin-bottom: 150px;
+  max-width: 85vw;
+  border: 5vmin solid #ffde59;
 }
 
 #footer-content {
