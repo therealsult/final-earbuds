@@ -7,9 +7,11 @@
     <!-- icon library  -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;400&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/nav.css">
 
   </head>
   <body>
@@ -23,7 +25,17 @@
     </div>
 
 
-    <h1 class="hidden">Main Page</h1>
+    <!-- ==== scrollbar ==== -->
+     <div class="fix" data-start="width: 0%; background-color: hsl(14, 100%, 50%);" data-end="width: 100%; background-color: hsl(74, 100%, 50%);"> 
+    </div>
+
+
+
+
+
+
+
+    <h1 class="hidden">page</h1>
 
   <!-- ==== header ==== -->
     
@@ -37,23 +49,25 @@
         <button id="button"></button>
         <div id="burger-con">
             <ul>
+
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about-section">About</a></li>
-                <li><a href="#specs">Features</a></li>
+                <li><a href="#about-main">About</a></li>
+                <li><a href="#features-sec">Features</a></li>
+
             </ul>
         </div>
     </nav>
 </header>
 
-  <!-- intro -->
-
-
-
-
-  <div class="fix" data-start="width: 0%; background-color: hsl(14, 100%, 50%);" data-end="width: 100%; background-color: hsl(54, 100%, 50%);"> 
-    </div>
   
+
+
+
+
   <!-- ==== hero ==== -->
+  <section id="image" class="col-span-full">
+    <img src="images/header-img.png" alt="front">
+  </section>
   <section id="hero-main" class="grid-con">
     <h2 class="hidden">Hero</h2>
     <div id="hero-content" class=" col-span-full l-col-start-2 l-col-end-12">
@@ -75,13 +89,14 @@
 <!-- ======== scroller ======== -->
 <section id="scr-animation" class="full-width-grid-con">
   <h2 class="hidden">Prodect Animation</h2>
-  <div id="animation-content" class="col-span-full">\
+  <div id="animation-content" class="col-span-full">
       <canvas id="explode-view"></canvas>
   </div>
 </section>
 
 
 <section id="about-main" class="grid-con">
+  <br>
   <h2 class="hidden">About</h2>
   <div id="about-content" class=" col-span-full l-col-start-2 l-col-end-12">
     <div id="intro">
@@ -209,7 +224,7 @@
             <div class="tape"></div>
             <h2>01</h2>
             <h3>Ultra-Sleek Design</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque nesciunt possimus eveniet eius assumenda ipsa modi distinctio, sunt earum voluptatem inventore in vel odio adipisci explicabo sint quibusdam nisi!</p>
+            <p>Designed with precision, our earbuds boast a minimalist aesthetic that effortlessly complements your lifestyle. The sleek, metallic finish and slim profile make these earbuds a fashion-forward accessory, while the advanced technology inside ensures a rich and immersive audio experience.</p>
             <a href="#">Read more...</a>
           </div>
         </div>
@@ -220,7 +235,7 @@
             <div class="tape"></div>
             <h2>02</h2>
             <h3>Exceptional Sound Quality</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque nesciunt possimus eveniet eius assumenda ipsa modi distinctio, sunt earum voluptatem inventore in vel odio adipisci explicabo sint quibusdam nisi!</p>
+            <p>Crafted with precision and engineered for perfection, these earbuds redefine the standard for audio performance. Experience the richness of deep bass, the clarity of midrange tones, and the brilliance of high frequencies, all delivered with precision and balance. </p>
             <a href="#">Read more...</a>
           </div>
         </div>
@@ -232,7 +247,7 @@
             <div class="tape"></div>
             <h2>03</h2>
             <h3>Paper-Thin Charging Case</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque nesciunt possimus eveniet eius assumenda ipsa modi distinctio, sunt earum voluptatem inventore in vel odio adipisci explicabo sint quibusdam nisi!</p>
+            <p>Crafted with cutting-edge technology, the paper-thin charging case is as discreet as it is powerful. The ultra-slim design ensures that you can carry your charging solution with you wherever you go, ensuring your earbuds are always ready for action.</p>
             <a href="#">Read more...</a>
           </div>
         </div>
@@ -244,7 +259,7 @@
             <div class="tape"></div>
             <h2>04</h2>
             <h3>Seamless Connectivity and Touch Controls</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque nesciunt possimus eveniet eius assumenda ipsa modi distinctio, sunt earum voluptatem inventore in vel odio adipisci explicabo sint quibusdam nisi!</p>
+            <p>Navigate your audio experience with ease using touch controls that respond to your slightest gesture. Play or pause your favorite tracks, adjust the volume, or take calls without reaching for your device – it's all at your fingertips. T</p>
             <a href="#">Read more...</a>
           </div>
         </div>
@@ -256,7 +271,7 @@
 
   <section id="x-ray-main" class="grid-con">
     <h2 class="hidden">X-ray</h2>
-    <div id="X-ray-content" class=" col-span-full l-col-start-2 l-col-end-12">
+    <div id="x-ray-content" class=" col-span-full l-col-start-2 l-col-end-12">
       <div id="intro">
         <h2>Look insde Paper Thin Buds™ v1</h2>
         <p>Explore what the inside of Paper Thin Tech® looks like, made with solid gold to provide sound superiority </p>
@@ -281,6 +296,10 @@
 
   
   <!-- ==== footer ==== -->
+
+  <section id="footer-img" class="col-span-full">
+    <img src="images/footer-img.png" alt="cta-img">
+  </section>
   <footer id="footer-section">
     <h2 class="hidden">Footer</h2>
     <div id="footer-content" class="col-span-full">
@@ -288,14 +307,17 @@
         <div id="footer-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about-section">About</a></li>
-                <li><a href="#specs">Specs</a></li>
+                <li><a href="#about-main">About</a></li>
+                <li><a href="#features-sec">Specs</a></li>
             </ul>
+          </div>
+      </div>
+    <section id="copyright">
+      <p>Copyright &copy; 2023 - Paper Thin Tech Technologies</p>
+    </section>
 </footer>
 
-<section id="copyright">
-  <p>Copyright &copy; 2023 - Paper Thin Tech Technologies</p>
-</section>
+
 
       
  
