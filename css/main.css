@@ -1,9 +1,5 @@
 
 
-
-
-
-
 /* ======== banner slide ======== */
 
 #introduction {
@@ -91,6 +87,83 @@ body {
 
 
 
+
+/* ======== about ======== */
+#about-sec h2, p {
+  text-align: left;
+
+}
+
+#about-main {
+  margin-top: 70px;
+}
+#about-box {
+ margin-top: -70px;
+ margin-bottom: 200px;
+}
+
+#about-box h2 {
+text-align: left;
+padding-left: 30px;
+}
+
+#first-row {
+  margin-bottom: 6rem;
+}
+
+.notemp{
+  display: inline-block;
+  padding-left: 200px;
+}
+.first {
+  width: 375px;
+  height: 20px;
+  background-color: lightgreen;
+  word-wrap: break-word;
+  margin-left: 30px;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+.second{
+  width: 375px;
+  height: 20px;
+  background-color: green;
+  z-index: 500;
+  top: 50px;
+  margin-left: 30px;
+  transition: opacity 0.5s linear ;
+}
+.third{
+  width: 375px;
+  height: 20px;
+  background-color: orange;
+  position: relative;
+  margin-left: 30px;
+  transition: opacity 0.7s linear;
+}
+.forth{
+  width: 375px;
+  height: 20px;
+  background-color: red;
+  position: relative;
+  margin-left: 30px;
+  transition: opacity 0.9s linear;
+}
+
+.fix{
+  height: 12px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
 /* ======== Model Viewer ======== */
 
 
@@ -156,6 +229,11 @@ model-viewer {
   font-size: 18px;
   margin: 20px 0 30px 0;
 }
+
+.HotspotAnnotation p {
+  font-size: 14px;
+}
+
 
 model-viewer::part(default-progress-bar) {
   height: 30px;
@@ -240,6 +318,15 @@ model-viewer > #ar-prompt > img {
   font-size: 32px;
 }
 
+ 
+
+
+
+
+
+
+
+
 /* ======== x-ray image revealer ======== */
 
 #outerShell {
@@ -247,7 +334,10 @@ model-viewer > #ar-prompt > img {
 }
 
 #imageCon {
-  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#x-ray-content {
   margin-bottom: 100px;
 }
 
@@ -262,7 +352,7 @@ model-viewer > #ar-prompt > img {
    }
   #imageCon {
     position: relative;
-    max-width: 940px;
+    max-width: 70vw;
     height: 90vh;
   }
   .slideImage {
@@ -289,14 +379,38 @@ model-viewer > #ar-prompt > img {
 
 
 }
-  
 
-/* ======== canvas ======== */
+
+
+
+
+
+/* ======== page css ========*/
+
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #ffffff;
   font-family: 'Lexend', sans-serif;
   font-size: 1rem;
+}
+
+
+#about-us {
+  margin-bottom: 40px;
+}
+
+#hotspotIcon {
+  font-size: 32px;
+}
+
+#model-canvas {
+  margin-top: 120px; margin-bottom: 120px;
+  max-width: 85vw;
+  border: 5vmin solid #ffde59;
 }
 
 h1 {
@@ -320,12 +434,9 @@ p {
   font-size: 35px;
   font-weight: lighter;
 }
- 
-
-/* ======== hero ======== */
 
 #intro h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
   text-align: left;
  }
 
@@ -337,102 +448,9 @@ p {
   margin-top: 50px;
 }
 
-/* ======== slider ======== */
 #explode-view {
   max-width: 100%;
  }
-
-
-
-/* ======== about ======== */
-#about-sec h2, p {
-  text-align: left;
-
-}
-
-#about-main {
-  margin-top: 70px;
-}
-#about-box {
- margin-top: -70px;
- margin-bottom: 200px;
-}
-
-#about-box h2 {
-text-align: left;
-padding-left: 30px;
-}
-
-#first-row {
-  margin-bottom: 6rem;
-}
-
-.notemp{
-  display: inline-block;
-  padding-left: 200px;
-}
-.first {
-  width: 375px;
-  height: 20px;
-  background-color: lightgreen;
-  word-wrap: break-word;
-  margin-left: 30px;
-  opacity: 0;
-  transition: opacity 0.3s linear;
-}
-.second{
-  width: 375px;
-  height: 20px;
-  background-color: green;
-  z-index: 500;
-  top: 50px;
-  margin-left: 30px;
-  transition: opacity 0.5s linear ;
-}
-.third{
-  width: 375px;
-  height: 20px;
-  background-color: orange;
-  position: relative;
-  margin-left: 30px;
-  transition: opacity 0.7s linear;
-}
-.forth{
-  width: 375px;
-  height: 20px;
-  background-color: red;
-  position: relative;
-  margin-left: 30px;
-  transition: opacity 0.9s linear;
-}
-
-.fix{
-  height: 10px;
-  background-color: blue;
-  position: fixed;
-  bottom: 0;
-}
-
-
-/* ======== page css ========*/
-
-
-
-
-
-#copyright {
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 0px 0 8px 0;
-}
-
-#copyright p {
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Lexend', sans-serif; 
-  font-weight: 100;
-  margin-top: -5px; margin-bottom:5px;
-}
 
 
 
@@ -484,257 +502,5 @@ padding-left: 30px;
    }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-#about-us {
-  margin-bottom: 40px;
-}
-
-#hotspotIcon {
-  font-size: 32px;
-}
-
-body {
-  background-color: #fff;
-}
-
-#model-canvas {
-  margin-top: 120px; margin-bottom: 120px;
-  max-width: 85vw;
-  border: 5vmin solid #ffde59;
-}
 
 
-
-
-
-
-
-
-
-
-/* ======== nav ======== */
-
-#sticky-nav {
-  position: sticky;
-  top: 0rem;
-  z-index: 1;
-  font-family: 'Lexend', sans-serif;
-  background-color: #000000;
-  
-}
-
-#main-header {
-  background-color: #ffde59;
-  height: 80px;
-  position: sticky;
-  top: 0rem;
-  z-index: 1;
-  font-family: 'Lexend', sans-serif;
-}
-
-#main-logo {
-  display: block;
-  align-self: center;
-  width: 40px;
-}
-
-#main-nav {
-   margin-bottom: 15px;
-  text-align: right;
-}
-
-#logo {
-  display: block;
-  align-self: center;
-  cursor: pointer;
-}
-
-#main-nav button {
-  width: 40px;
-  height: 58px;
-  margin-top: 8px;
-  border: 0;
-  transition: all 0.5s ease;
-  background: url(../images/burger.svg) no-repeat center;
-}
-
-#main-nav button.expanded {
-  transform: rotate(90deg);
-  position: relative;
-  z-index: 3;
-}
-
-#burger-con {
-  display: none;
-  cursor: pointer;
-}
-
-#burger-con.slide-toggle {
-  z-index: 2;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: #000000d7;
-}
-
-#main-nav ul {
-  list-style: none;
-  margin: 80px 0px 0px 0px;
-  padding: 0;
-}
-
-#main-nav ul li a {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px 0 10px 0;
-  font-size: 35px;
-  text-decoration: none;
-}
-
-#main-nav ul li a:hover {
-  color: #5f5f5f;
-  scale: 1.1;
-  transition: all ease-in-out 0.2s;
-
-}
-
-#main-nav ul li:last-child {
-  margin-bottom: 10px;
-}
-
-#copyright {
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 0px 0 8px 0;
-  font-size: 6px;
-  font-family: 'Lexend', sans-serif; 
-  font-weight: 100;
-}
-
-#copyright h2 {
-  text-align: center
-}
-
-
-
-
-
-@media screen and (min-width: 768px) {
- 
-  #main-logo {
-    margin-top: -5px;
-  }
-
-  #button {
-    display: none;
-  }
-
-  #burger-con {
-    display: block;
-    font-size: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    cursor: pointer;
-  }
-  
-  #burger-con ul li {
-    display: inline;
-    cursor: pointer;
-  }
-
-  #burguer-con.slide-toggle {
-    height: auto;
-    width: auto;
-    background: none;
-    z-index: auto;
-    position: static;
-    cursor: pointer;
-  }
-
-  #main-nav {
-    display: block;
-    margin: center;
-  }
-
-  #main-nav ul {
-    margin: 0;
-  }
-
-  #main-nav ul li a {
-    display: inline;
-    font-size: 28px;
-  }
-  #burger-con ul li {
-    margin-right: 28px;
-    text-decoration: none;
-  }
-  
-  #burger-con ul li:last-child {
-    margin-right: 0px;
-  }
-}
-
-
-
-
-
-
-/* ======== footer ======== */
-
-#footer-section {
-  background-color: #ffde59;
-  margin-top: 50px;
-  text-align: center;
-}
-
-#footer-content img {
-  width: 600px;
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-#footer-content {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#footer-content h2 {
-  color: white;
-}
-
-#footer-nav ul {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-#footer-nav ul li a {
-  display: block;
-  margin: 20px;
-  font-family: 'Lexend', sans-serif;
-  text-align: center;
-  text-decoration: none;
-  font-size: 32px;
-  font-weight: 400;
-  color: #fff;
-}
-
-#footer-nav ul li a:hover {
-  color: #5f5f5f;
-  scale: 1.2;
-  transition: all ease-in-out 0.2s;
-}
-
-
-@media screen and (min-width: 1200px) {
-  #model-canvas {
-    display: block;
-  }
-}
